@@ -105,6 +105,7 @@
             padding: 1rem;
             border-bottom: 1px solid #4a5568; /* gray-700 */
             text-align: left;
+            min-width: 150px; /* Ensure columns have a minimum width */
         }
         .comparison-table th {
             background-color: #2d3748; /* gray-800 */
@@ -182,57 +183,59 @@
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Why XAU AI Beats a Normal Algo Indicator</h2>
             <div class="max-w-5xl mx-auto rounded-xl shadow-lg overflow-hidden border-4 border-gray-400">
-                <table class="w-full text-white comparison-table">
-                    <thead>
-                        <tr>
-                            <th class="w-1/3">FEATURES/CAPABILITY</th>
-                            <th class="w-1/3">NORMAL ALGO INDICATOR</th>
-                            <th class="w-1/3">XAU AI INDICATOR</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="uppercase">Market Adaptability</td>
-                            <td class="text-red-300">Static logic, often fails in volatility</td>
-                            <td class="text-green-300">Learns from patterns, adapts in real-time</td>
-                        </tr>
-                        <tr>
-                            <td class="uppercase">Signal Precision</td>
-                            <td class="text-red-300">Generic signals, prone to false alerts</td>
-                            <td class="text-green-300">High-accuracy entries/exits, real-time confirmations</td>
-                        </tr>
-                        <tr>
-                            <td class="uppercase">Focus</td>
-                            <td class="text-red-300">Multi-asset, diluted performance</td>
-                            <td class="text-green-300">Hyper-focused on XAUUSD for laser-sharp signals</td>
-                        </tr>
-                        <tr>
-                            <td class="uppercase">Learning Ability</td>
-                            <td class="text-red-300">Fixed strategy, no evolution</td>
-                            <td class="text-green-300">Continuously refines its approach via AI modeling</td>
-                        </tr>
-                        <tr>
-                            <td class="uppercase">Visual Interface</td>
-                            <td class="text-red-300">Basic chart lines, often cluttered</td>
-                            <td class="text-green-300">Clean visuals of BUY/SELL highlights</td>
-                        </tr>
-                        <tr>
-                            <td class="uppercase">Emotional Bias Elimination</td>
-                            <td class="text-red-300">Limited. Depends on user interpretation</td>
-                            <td class="text-green-300">Automated logic reduces human bias completely</td>
-                        </tr>
-                        <tr>
-                            <td class="uppercase">Backtesting Strength</td>
-                            <td class="text-red-300">Limited to predefined setups</td>
-                            <td class="text-green-300">Robust backtesting with dynamic logic handling</td>
-                        </tr>
-                        <tr>
-                            <td class="uppercase">Ease of Use</td>
-                            <td class="text-red-300">Confusing parameters & manual setup</td>
-                            <td class="text-green-300">Plug-and-play experience, no coding required</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-white comparison-table">
+                        <thead>
+                            <tr>
+                                <th class="w-1/3">FEATURES/CAPABILITY</th>
+                                <th class="w-1/3">NORMAL ALGO INDICATOR</th>
+                                <th class="w-1/3">XAU AI INDICATOR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="uppercase">Market Adaptability</td>
+                                <td class="text-red-300">Static logic, often fails in volatility</td>
+                                <td class="text-green-300">Learns from patterns, adapts in real-time</td>
+                            </tr>
+                            <tr>
+                                <td class="uppercase">Signal Precision</td>
+                                <td class="text-red-300">Generic signals, prone to false alerts</td>
+                                <td class="text-green-300">High-accuracy entries/exits, real-time confirmations</td>
+                            </tr>
+                            <tr>
+                                <td class="uppercase">Focus</td>
+                                <td class="text-red-300">Multi-asset, diluted performance</td>
+                                <td class="text-green-300">Hyper-focused on XAUUSD for laser-sharp signals</td>
+                            </tr>
+                            <tr>
+                                <td class="uppercase">Learning Ability</td>
+                                <td class="text-red-300">Fixed strategy, no evolution</td>
+                                <td class="text-green-300">Continuously refines its approach via AI modeling</td>
+                            </tr>
+                            <tr>
+                                <td class="uppercase">Visual Interface</td>
+                                <td class="text-red-300">Basic chart lines, often cluttered</td>
+                                <td class="text-green-300">Clean visuals of BUY/SELL highlights</td>
+                            </tr>
+                            <tr>
+                                <td class="uppercase">Emotional Bias Elimination</td>
+                                <td class="text-red-300">Limited. Depends on user interpretation</td>
+                                <td class="text-green-300">Automated logic reduces human bias completely</td>
+                            </tr>
+                            <tr>
+                                <td class="uppercase">Backtesting Strength</td>
+                                <td class="text-red-300">Limited to predefined setups</td>
+                                <td class="text-green-300">Robust backtesting with dynamic logic handling</td>
+                            </tr>
+                            <tr>
+                                <td class="uppercase">Ease of Use</td>
+                                <td class="text-red-300">Confusing parameters & manual setup</td>
+                                <td class="text-green-300">Plug-and-play experience, no coding required</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
