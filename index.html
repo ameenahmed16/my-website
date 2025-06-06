@@ -6,6 +6,7 @@
     <title>XAUAlgoAI - AI-Powered Gold Trading Indicator</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- D3.js for the chart -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
         body {
@@ -79,7 +80,7 @@
 
         /* Hero section with background image */
         #home {
-            background-image: url('https://lh3.googleusercontent.com/pw/AP1GczP5Wspc83w3V2DnxgnbOBSrg9w6HfOqlqQ9oi-opDyVrI57hbXRPBjxXlLP5s0q7V6s-t3LDIU-0pW9j8Ln8KTNCKs05IiEWwKAg07JdL4M8j3EuDOOAwZ_oBb5ZEIFGwTMzc9GgVOLzsEDL2nPvMMc=w2070-h1380-s-no-gm?authuser=0'); /* Your logo as background */
+            background-image: url('https://images.unsplash.com/photo-1590283437107-1608d13261a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -125,6 +126,7 @@
 </head>
 <body class="antialiased">
 
+    <!-- Header -->
     <header class="bg-gray-900 text-white p-4 shadow-lg">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
             <a href="#" class="text-3xl font-bold rounded-lg p-2 hover:bg-gray-700 hover:text-yellow-400 transition duration-300">XAUAlgoAI</a>
@@ -134,15 +136,19 @@
                     <li><a href="#features" class="hover:text-yellow-400 transition duration-300 text-lg">Features</a></li>
                     <li><a href="#gold-chart" class="hover:text-yellow-400 transition duration-300 text-lg">Live Chart</a></li>
                     <li><a href="#pricing" class="hover:text-yellow-400 transition duration-300 text-lg">Pricing</a></li>
-                    <li><a href="#contact" class="hover:text-yellow-400 transition duration-300 text-lg">Contact</a></li>
+                    <!-- Removed Contact link as the section is being removed -->
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="text-white py-20 md:py-32 text-center rounded-b-3xl shadow-xl">
         <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center gap-12">
             <div class="lg:w-full text-center">
+                <!-- XAU AI Logo Integration -->
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczP5Wspc83w3V2DnxgnbOBSrg9w6HfOqlqQ9oi-opDyVrI57hbXRPBjxXlLP5s0q7V6s-t3LDIU-0pW9j8Ln8KTNCKs05IiEWwKAg07JdL4M8j3EuDOOAwZ_oBb5ZEIFGwTMzc9GgVOLzsEDL2nPvMMc=w2070-h1380-s-no-gm?authuser=0" alt="XAU AI Logo" class="mx-auto mb-8 rounded-lg shadow-lg max-w-[150px] h-auto transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+                
                 <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-down">
                     Unlock Gold Trading Potential with AI
                 </h1>
@@ -156,20 +162,24 @@
             </div>
     </section>
 
+    <!-- Key Metrics Section -->
     <section class="py-16 md:py-24 bg-gray-900 text-white">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold mb-12">Numbers That Speak Volumes</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Metric 1 -->
                 <div class="p-8 rounded-xl bg-gray-800 shadow-lg flex flex-col items-center transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
                     <p class="text-6xl font-extrabold text-yellow-400 mb-2">90%+</p>
                     <p class="text-xl font-semibold text-gray-200">Signal Accuracy</p>
                     <p class="text-gray-400 text-sm">Based on historical backtesting</p>
                 </div>
+                <!-- Metric 2 -->
                 <div class="p-8 rounded-xl bg-gray-800 shadow-lg flex flex-col items-center transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
                     <p class="text-6xl font-extrabold text-yellow-400 mb-2">24/7</p>
                     <p class="text-xl font-semibold text-gray-200">Market Monitoring</p>
                     <p class="text-gray-400 text-sm">AI constantly analyzes global gold markets</p>
                 </div>
+                <!-- Metric 3 -->
                 <div class="p-8 rounded-xl bg-gray-800 shadow-lg flex flex-col items-center transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
                     <p class="text-6xl font-extrabold text-yellow-400 mb-2">1000+</p>
                     <p class="text-xl font-semibold text-gray-200">Satisfied Traders</p>
@@ -179,10 +189,12 @@
         </div>
     </section>
 
+    <!-- Features Section - Updated with a comparison table -->
     <section id="features" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Why XAU AI Beats a Normal Algo Indicator</h2>
             <div class="max-w-5xl mx-auto rounded-xl shadow-lg overflow-hidden border-4 border-gray-400">
+                <!-- Added overflow-x-auto for horizontal scrolling on small screens -->
                 <div class="overflow-x-auto">
                     <table class="w-full text-white comparison-table">
                         <thead>
@@ -240,6 +252,7 @@
         </div>
     </section>
 
+    <!-- How It Works Section (Still present but not in main nav) -->
     <section id="how-it-works" class="bg-gray-100 py-16 md:py-24">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold mb-12 text-gray-800">How XAUAlgoAI Works</h2>
@@ -251,6 +264,7 @@
         </div>
     </section>
 
+    <!-- Real-time Gold Chart Section -->
     <section id="gold-chart" class="py-16 md:py-24 bg-gray-900 text-white">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold mb-12">Live XAU/USD Price Chart</h2>
@@ -265,12 +279,16 @@
         </div>
     </section>
 
+    <!-- AI-Powered Strategy Generator Section (Removed) -->
+    <!-- This section was removed as per user request -->
+
+    <!-- Video Showcase Section (Still present but not in main nav) -->
     <section id="video-showcase" class="py-16 md:py-24 bg-gray-900 text-white">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold mb-12">See XAUAlgoAI in Action</h2>
             <div class="max-w-4xl mx-auto video-container shadow-xl">
                 <iframe
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&controls=1&modestbranding=1&rel=0"
+                    src="https://www.youtube.com/embed/wc-Lpc1ObDw"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
@@ -282,6 +300,7 @@
         </div>
     </section>
 
+    <!-- How to Get Started Section -->
     <section class="py-16 md:py-24 bg-gradient-to-br from-gray-800 to-black text-white">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold mb-12">Ready to Get Started?</h2>
@@ -308,52 +327,46 @@
         </div>
     </section>
 
-    <section class="py-16 md:py-24 bg-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-12 text-gray-800">What Our Traders Say</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gray-100 p-8 rounded-xl shadow-md border-t-4 border-yellow-400 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer">
-                    <p class="text-lg italic text-gray-700 mb-4">I have used 10 bots before but this one finally got me ₹25000 profit in 2 weeks.</p>
-                    <p class="font-semibold text-yellow-600">Rajiv Singh, New Delhi</p>
-                </div>
-                <div class="bg-gray-100 p-8 rounded-xl shadow-md border-t-4 border-yellow-400 hover:shadow-lg transition duration-300 ease-in-out cursor-pointer">
-                    <p class="text-lg italic text-gray-700 mb-4">I was skeptical at first, but this indicator predicted a sharp move on XAUUSD I didn't even see coming. I made back my subscription in 2 trades</p>
-                    <p class="font-semibold text-yellow-600">Kartik Chaubey, Lucknow</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Testimonials Section (Removed) -->
+    <!-- This section was removed as per user request -->
 
+    <!-- Pricing Section -->
     <section id="pricing" class="py-16 md:py-24 bg-gradient-to-br from-gray-900 to-gray-700 text-white rounded-t-3xl shadow-xl">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold mb-12">Flexible Plans for Every Trader</h2>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
                 <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg flex flex-col justify-between transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
                     <div>
                         <h3 class="text-3xl font-bold mb-4 text-gray-700">Monthly</h3>
-                        <p class="text-5xl font-extrabold mb-6">₹999<span class="text-xl font-normal">/month</span></p>
+                        <p class="text-5xl font-extrabold mb-6">$50<span class="text-xl font-normal">/month</span></p>
                         <ul class="text-left space-y-3 mb-8 text-gray-700">
-                            </ul>
+                            <!-- Features removed as per request -->
+                        </ul>
                     </div>
                     <a href="#contact" class="bg-gray-800 text-yellow-400 hover:bg-gray-900 font-bold py-3 px-6 rounded-full text-lg shadow-md transition duration-300">Choose Basic</a>
                 </div>
 
+                <!-- Pro Plan -->
                 <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg border-4 border-yellow-400 flex flex-col justify-between transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
                     <div>
                         <h3 class="text-3xl font-bold mb-4 text-yellow-600">Quarterly <span class="text-sm bg-yellow-400 text-gray-900 px-2 py-1 rounded-full ml-2">Recommended</span></h3>
-                        <p class="text-5xl font-extrabold mb-6">₹2499<span class="text-xl font-normal">/month</span></p>
+                        <p class="text-5xl font-extrabold mb-6">$120<span class="text-xl font-normal">/month</span></p>
                         <ul class="text-left space-y-3 mb-8 text-gray-700">
-                            </ul>
+                            <!-- Features removed as per request -->
+                        </ul>
                     </div>
                     <a href="#contact" class="bg-yellow-500 text-gray-900 hover:bg-yellow-600 font-bold py-3 px-6 rounded-full text-lg shadow-md transition duration-300">Choose Pro</a>
                 </div>
 
+                <!-- Premium Plan -->
                 <div class="bg-white text-gray-800 p-8 rounded-xl shadow-lg flex flex-col justify-between transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
                     <div>
                         <h3 class="text-3xl font-bold mb-4 text-gray-700">Yearly</h3>
-                        <p class="text-5xl font-extrabold mb-6">₹7999<span class="text-xl font-normal">/month</span></p>
+                        <p class="text-5xl font-extrabold mb-6">$400<span class="text-xl font-normal">/month</span></p>
                         <ul class="text-left space-y-3 mb-8 text-gray-700">
-                            </ul>
+                            <!-- Features removed as per request -->
+                        </ul>
                     </div>
                     <a href="#contact" class="bg-gray-700 text-yellow-400 hover:bg-gray-800 font-bold py-3 px-6 rounded-full text-lg shadow-md transition duration-300">Choose Premium</a>
                 </div>
@@ -361,18 +374,23 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
     <section class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Frequently Asked Questions</h2>
             <div class="max-w-3xl mx-auto space-y-6">
+                <!-- FAQ Item 1 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 ease-in-out cursor-pointer">
                     <h3 class="text-xl font-semibold mb-2 text-gray-700">What trading platforms does XAUAlgoAI support?</h3>
                     <p class="text-gray-600">Currently, XAUAlgoAI is compatible with TradingView. We are working on expanding support to other popular platforms soon.</p>
                 </div>
+                <!-- FAQ Item 2 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 ease-in-out cursor-pointer">
                     <h3 class="text-xl font-semibold mb-2 text-gray-700">Is XAUAlgoAI suitable for beginners?</h3>
                     <p class="text-gray-600">Yes! While it uses advanced AI, our indicator is designed with an intuitive interface, making it accessible for both seasoned traders and those new to the gold market.</p>
                 </div>
+                <!-- Removed FAQ Item 3 as per request -->
+                <!-- FAQ Item 4 (now 3rd) -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 ease-in-out cursor-pointer">
                     <h3 class="text-xl font-semibold mb-2 text-gray-700">How do I get support?</h3>
                     <p class="text-gray-600">You can reach our support team via email at contact.xauai@gmail.com. We provide instant support to our users.</p>
@@ -381,32 +399,10 @@
         </div>
     </section>
 
-    <section id="contact" class="py-16 md:py-24 bg-gray-100">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-12 text-gray-800">Get in Touch</h2>
-            <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
-                <p class="text-lg text-gray-700 mb-6">Have questions or ready to elevate your gold trading? Contact us today!</p>
-                <form class="space-y-6">
-                    <div>
-                        <label for="name" class="block text-left text-gray-700 text-sm font-bold mb-2">Name</label>
-                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="Your Name">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-left text-gray-700 text-sm font-bold mb-2">Email</label>
-                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="your@example.com">
-                    </div>
-                    <div>
-                        <label for="message" class="block text-left text-gray-700 text-sm font-bold mb-2">Message</label>
-                        <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="Your message..."></textarea>
-                    </div>
-                    <button type="submit" class="bg-yellow-600 text-gray-900 hover:bg-yellow-700 font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
+    <!-- Contact Section (Removed) -->
+    <!-- This section was removed as per user request -->
 
+    <!-- Footer -->
     <footer class="bg-gray-900 text-white py-8 rounded-t-3xl shadow-inner">
         <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <p>© 2025 XAUAlgoAI. All rights reserved.</p>
@@ -417,6 +413,7 @@
         </div>
     </footer>
 
+    <!-- Scroll to Top Button -->
     <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">⬆️</button>
 
     <script>
@@ -450,30 +447,6 @@
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
-
-        // Placeholder for form submission (no actual backend)
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // In a real application, you would send this data to a server
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            // Display a simple message box instead of alert()
-            const messageBox = document.createElement('div');
-            messageBox.className = 'fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50';
-            messageBox.innerHTML = `
-                <div class="bg-white p-8 rounded-lg shadow-xl text-center max-w-sm mx-auto">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Message Sent!</h3>
-                    <p class="text-gray-700 mb-6">Thank you, ${name}! Your message has been received. We'll get back to you at ${email} shortly.</p>
-                    <button class="bg-yellow-600 text-white hover:bg-yellow-700 font-bold py-2 px-6 rounded-full" onclick="this.parentNode.parentNode.remove()">Close</button>
-                </div>
-            `;
-            document.body.appendChild(messageBox);
-
-            // Clear the form
-            this.reset();
-        });
 
         // D3.js Gold Chart
         const margin = { top: 20, right: 30, bottom: 40, left: 60 };
@@ -558,7 +531,7 @@
                 .call(d3.axisBottom(x).ticks(d3.timeSecond.every(5)).tickFormat(d3.timeFormat("%H:%M:%S")));
 
             svg.select(".y-axis")
-                .call(d3.axisLeft(y).tickFormat(d => `₹${d.toFixed(2)}`)); // Format Y-axis as Rupees
+                .call(d3.axisLeft(y).tickFormat(d => `$${d.toFixed(2)}`)); // Format Y-axis as USD
 
             // Update line path
             svg.select(".line")
